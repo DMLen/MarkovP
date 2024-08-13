@@ -20,7 +20,7 @@ def build_lexicon(input_filename, lexicon): #Analyse the text file and populate 
                     nextword = words[i + 1]
                     print(f"Word \"{word}\" is followed by \"{nextword}\"")
                 except IndexError:
-                    print(f"Word \"{word}\" is at the end of the text! -------------")
+                    print(f"Word \"{word}\" is at the end of the line! -------------")
                     nextword = None
 
                     #add current word to the table (if it doesnt already exist)
@@ -106,9 +106,9 @@ def MarkovP(output_filename, lexicon, desired_length):
 
 htable = HashTable() #instantiate empty hashtable
 
-input_filename = input("Enter filename containing text corpus (suggested: gutenberg.txt): ")
-output_filename = input("Enter filename for generated text output: ")
-desired_length = int(input("Enter desired length of generated text in words (suggested: 200): "))
+input_filename = input("Enter filename containing text corpus (suggested: sherlock.txt): ")
+output_filename = input("Enter filename for generated text output (suggested: output.txt): ")
+desired_length = int(input("Enter desired length of generated text in words (suggested: 500): "))
 
 if not os.path.isfile(input_filename):
     print(f"File {input_filename} could not be opened, or was not found.")
