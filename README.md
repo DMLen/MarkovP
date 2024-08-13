@@ -4,7 +4,7 @@
 This is a program that will analyse the contents of a given corpus (any large body of text), and attempt to randomly generate text that is similar. The process behind this is known as a [Markov Process](https://en.wikipedia.org/wiki/Pig_(dice_game)](https://en.wikipedia.org/wiki/Markov_chain))
 
 ## How to Run?
-Simply run *markov-p.py* and follow the on-screen prompts.
+Simply run *markovp.py* and follow the on-screen prompts.
 A plaintext file *sherlock.txt* has been included in this repo as a sample testing file [(Source)](https://sherlock-holm.es/stories/plain-text/advs.txt). 
 After execution, please note the creation of a new output file with the name you provided. This contains the program output.
 
