@@ -84,7 +84,7 @@ def MarkovP(output_filename, lexicon, desired_length):
         if nextWord == None:
             seed = get_starter(lexiconList)
             nextWord = seed.spelling
-            print("Reseeding because the word didn't have any words following it. New seed: {seed.spelling}")
+            print(f"Reseeding because the word didn't have any words following it. New seed: {seed.spelling}")
         
         outputString += nextWord + " "
 
